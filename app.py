@@ -66,19 +66,17 @@ with st.sidebar:
     
     page = st.radio(
         "Select Section:",
-        ["Overview", "Weekly Breakdown", "Platform Strategy", "Content Calendar", "KPIs & Goals", "Resources"]
+        ["Overview", "Weekly Breakdown", "Platform Strategy", "Content Calendar", "KPIs & Goals"]
     )
     
     st.divider()
     st.caption("**Strategy Period:** January 2026")
     st.caption("**Document Version:** 1.0")
-    st.caption("**Last Updated:** January 2, 2026")
 
 # Main content
 if page == "Overview":
     st.title("🎨 Purple Crayolá - January 2026 Content Strategy")
     st.markdown("### Digital Transformation Through Strategic Content")
-    st.markdown("**Prepared for:** Chief Operations Officer | **Strategy Owner:** Content & Social Media Team")
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -136,7 +134,7 @@ if page == "Overview":
         
         <div class="content-card">
         <h3>📊 Theme 2: Case Studies & Success Stories</h3>
-        <p>Showcase real impact (like the patient menu app testimonial).</p>
+        <p>Showcase real impact and client testimonials.</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -243,7 +241,7 @@ elif page == "Weekly Breakdown":
             st.markdown("""
             ### Daily Engagement
             
-            - Daily tips thread: "Digital Transformation Tips for 2026" (5 tweets throughout the week)
+            - Daily tips thread: "Digital Transformation Tips for 2026"
             - Engagement tweets asking followers about their digital goals
             - Retweet industry news with Purple Crayolá's perspective
             """)
@@ -286,7 +284,7 @@ elif page == "Weekly Breakdown":
             
             ### Client Testimonial Post (Jan 10)
             
-            - Feature the patient menu app testimonial
+            - Feature client testimonial
             - Designed quote graphic with client photo/logo if available
             - Tag client if appropriate
             """)
@@ -309,7 +307,7 @@ elif page == "Weekly Breakdown":
             st.markdown("""
             ### Post 1: Team Spotlight (Jan 14)
             
-            **Content:** Introduce key team members (start with Founder, COO, Joy)  
+            **Content:** Introduce key team members  
             **Format:** Professional photo + mini Q&A about their role and vision  
             **Purpose:** Humanizes the brand
             
@@ -326,7 +324,7 @@ elif page == "Weekly Breakdown":
             st.markdown("""
             ### "Day in the Life" Stories (Jan 13-15)
             
-            - Follow different team members through their workday
+            - Follow team members through their workday
             - Show office culture, brainstorming sessions, client calls
             - Use interactive stickers (polls, questions, quizzes)
             
@@ -344,7 +342,7 @@ elif page == "Weekly Breakdown":
             ### Weekly Content
             
             - #MotivationMonday with tech/innovation quotes
-            - Wednesday wisdom: Share a lesson learned from projects
+            - Wednesday wisdom: Share lessons learned from projects
             - Engage with industry conversations
             """)
     
@@ -357,7 +355,7 @@ elif page == "Weekly Breakdown":
             st.markdown("""
             ### Post 1: Case Study Deep Dive (Jan 21)
             
-            **Content:** Full case study of a successful project (e.g., the patient menu app)  
+            **Content:** Full case study of a successful project  
             **Format:** Challenge → Solution → Results → Client Impact  
             **Include:** Metrics/outcomes if possible
             
@@ -390,7 +388,7 @@ elif page == "Weekly Breakdown":
             st.markdown("""
             ### Weekly Engagement
             
-            - Share blog post or article (if Purple Crayolá has one)
+            - Share blog post or article
             - Tech Thursday: Industry insights
             - Weekend engagement: Light, fun tech-related content
             """)
@@ -675,12 +673,12 @@ elif page == "Content Calendar":
     st.plotly_chart(fig, use_container_width=True)
 
 elif page == "KPIs & Goals":
-    st.title("🎯 KPIs & Realistic Goals")
+    st.title("🎯 KPIs & Strategic Goals")
     
     st.markdown("""
     <div class="highlight">
     <h3>⚠️ Month 1 Philosophy: Foundation Over Growth</h3>
-    <p>January is about building sustainable systems, learning the brand voice, and understanding 
+    <p>January focuses on building sustainable systems, learning the brand voice, and understanding 
     what resonates with the audience. Significant growth typically happens in months 2-4.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -697,36 +695,37 @@ elif page == "KPIs & Goals":
         st.metric("Post Consistency", "80-90%", "Completion Rate", help="12-15 posts across platforms")
         
         st.markdown("""
-        #### Why Conservative?
-        - Learning the brand and audience
-        - January is typically slow post-holidays
-        - Algorithm needs time to understand posting patterns
-        - Quality foundation > vanity metrics
+        #### Why Conservative Targets?
+        - Building brand presence and audience understanding
+        - January typically shows slower engagement post-holidays
+        - Algorithm optimization requires consistent posting patterns
+        - Quality foundation enables sustainable long-term growth
         """)
     
     with col2:
-        st.markdown("### ✅ Process Goals (Most Important)")
+        st.markdown("### ✅ Strategic Objectives")
         
-        goals = [
-            "Get access to all accounts",
-            "Audit current performance baseline",
-            "Create content calendar template",
-            "Establish approval workflow",
-            "Post consistently (80-90% target)",
-            "Build content templates library",
-            "Set up analytics tracking",
-            "Respond to all engagement within 24-48 hours",
-            "Build relationships with 10-15 key accounts",
-            "Generate 2-5 meaningful inquiries"
-        ]
+        st.markdown("""
+        **Infrastructure:**
+        - Establish content calendar and workflow
+        - Build reusable content templates
+        - Set up comprehensive analytics tracking
         
-        for goal in goals:
-            st.checkbox(goal, key=goal)
+        **Engagement:**
+        - Respond to all engagement within 24-48 hours
+        - Build relationships with 10-15 key industry accounts
+        - Foster active community discussions
+        
+        **Business Impact:**
+        - Generate 2-5 qualified inquiries
+        - Increase website traffic from social channels
+        - Establish Purple Crayolá as industry thought leader
+        """)
     
     st.divider()
     
     # Metrics to track
-    st.markdown("### 📊 Key Metrics to Track")
+    st.markdown("### 📊 Key Performance Indicators")
     
     metrics_col1, metrics_col2, metrics_col3 = st.columns(3)
     
@@ -754,10 +753,10 @@ elif page == "KPIs & Goals":
         st.markdown("""
         **Business Impact**
         - DM inquiries
-        - Consultation bookings
+        - Consultation requests
         - Website traffic from social
         - Lead generation
-        - Response time
+        - Average response time
         """)
     
     st.divider()
@@ -781,222 +780,13 @@ elif page == "KPIs & Goals":
     
     st.markdown("""
     <div class="highlight">
-    <h4>💡 Setting Expectations with Leadership</h4>
-    <p><strong>Recommended approach:</strong> "Focus on building a strong foundation in January—consistent 
-    quality content, understanding our audience, and establishing systems. Expect modest growth (1-3%) as we 
-    learn what resonates, with acceleration in months 2-3 once we have performance data."</p>
+    <h4>💡 Strategic Approach</h4>
+    <p>This strategy prioritizes building a strong foundation in January—consistent 
+    quality content, understanding audience preferences, and establishing robust systems. 
+    Modest initial growth (1-3%) positions us for acceleration in Q1 as we leverage 
+    performance data and audience insights.</p>
     </div>
     """, unsafe_allow_html=True)
-
-else:  # Resources
-    st.title("🛠️ Resources & Tools")
-    
-    tab1, tab2, tab3, tab4 = st.tabs(["Content Creation", "Scheduling & Analytics", "Hashtag Strategy", "Quick Wins"])
-    
-    with tab1:
-        st.markdown("## 🎨 Content Creation Tools")
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown("""
-            ### Design Tools
-            - **Canva Pro** - Graphics and carousels
-            - **Adobe Creative Suite** - Professional designs
-            - **Figma** - Collaborative design work
-            - **Remove.bg** - Background removal
-            - **Unsplash/Pexels** - Stock photos
-            
-            ### Video Tools
-            - **CapCut** - Video editing
-            - **InShot** - Mobile video editing
-            - **Loom** - Screen recording
-            - **Descript** - Video transcription & editing
-            """)
-        
-        with col2:
-            st.markdown("""
-            ### Writing Tools
-            - **Grammarly** - Grammar checking
-            - **Hemingway Editor** - Readability
-            - **Claude/ChatGPT** - Content ideation
-            - **Google Docs** - Collaboration
-            
-            ### Asset Management
-            - **Google Drive** - File storage
-            - **Dropbox** - File sharing
-            - **Notion** - Content organization
-            - **Airtable** - Content database
-            """)
-    
-    with tab2:
-        st.markdown("## 📅 Scheduling & Analytics")
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown("""
-            ### Scheduling Tools
-            - **Buffer** - Multi-platform scheduling
-            - **Hootsuite** - Social media management
-            - **Later** - Instagram-focused
-            - **Meta Business Suite** - FB/IG native
-            - **LinkedIn Native** - LinkedIn scheduling
-            
-            ### Calendar Management
-            - **Google Sheets** - Simple calendar
-            - **Notion** - Visual calendar
-            - **Trello** - Kanban-style planning
-            - **Asana** - Project management
-            """)
-        
-        with col2:
-            st.markdown("""
-            ### Analytics Tools
-            - **Native Platform Insights** - Free analytics
-            - **Google Analytics** - Website traffic
-            - **Sprout Social** - Comprehensive analytics
-            - **Iconosquare** - Instagram analytics
-            - **LinkedIn Analytics** - Professional insights
-            
-            ### Reporting
-            - **Google Data Studio** - Visual reports
-            - **Canva** - Report design
-            - **Excel/Google Sheets** - Data analysis
-            """)
-    
-    with tab3:
-        st.markdown("## #️⃣ Hashtag Strategy")
-        
-        col1, col2, col3 = st.columns(3)
-        
-        with col1:
-            st.markdown("""
-            ### Branded Hashtags
-            Use these consistently:
-            - #PurpleCrayolá
-            - #DigitalTransformationNG
-            - #UserExperienceByDesign
-            
-            **Usage:** Include in every post
-            """)
-        
-        with col2:
-            st.markdown("""
-            ### Industry Hashtags
-            Rotate these for reach:
-            - #DigitalTransformation
-            - #WebDevelopment
-            - #DigitalMarketing
-            - #TechInNigeria
-            - #NigerianStartups
-            - #BusinessGrowth
-            - #UXDesign
-            - #Innovation
-            
-            **Usage:** 3-5 per post on Instagram, 2-3 on LinkedIn
-            """)
-        
-        with col3:
-            st.markdown("""
-            ### Engagement Hashtags
-            Use for specific posts:
-            - #TechTuesday
-            - #MotivationMonday
-            - #FridayThoughts
-            - #ThrowbackThursday
-            - #WebsiteTips
-            - #StartupLife
-            - #TechTips
-            
-            **Usage:** Match to content theme
-            """)
-        
-        st.divider()
-        
-        st.markdown("""
-        ### 📋 Hashtag Best Practices
-        
-        **LinkedIn:**
-        - Use 3-5 hashtags maximum
-        - Place at the end of the post
-        - Mix branded + industry hashtags
-        - Avoid overly generic tags
-        
-        **Instagram:**
-        - Use 8-15 hashtags
-        - Can place in caption or first comment
-        - Mix high, medium, and low competition tags
-        - Create a branded hashtag for campaigns
-        
-        **Twitter/X:**
-        - Use 1-3 hashtags maximum
-        - Integrate naturally into tweet text
-        - Join trending conversations when relevant
-        - Keep hashtags concise
-        """)
-    
-    with tab4:
-        st.markdown("## ⚡ Quick Wins for First Week")
-        
-        st.markdown("""
-        ### Day 1 (Thursday, January 2)
-        - ✅ Get access to all social media accounts
-        - ✅ Audit current follower counts and baseline metrics
-        - ✅ Review last 30 days of content performance
-        - ✅ Set up analytics tracking spreadsheet
-        - ✅ Introduce via Instagram stories
-        - ✅ Post New Year vision content on LinkedIn
-        
-        ### Day 2 (Friday, January 3)
-        - ✅ Continue Instagram story series (polls, BTS)
-        - ✅ Set up content calendar template (Google Sheets/Notion)
-        - ✅ Review brand guidelines and tone of voice
-        - ✅ Identify top-performing content types
-        - ✅ Create list of content ideas for Week 2
-        
-        ### Weekend (January 4-5)
-        - ✅ Post industry trends content on LinkedIn
-        - ✅ Post carousel on Instagram about digital transformation
-        - ✅ Plan and schedule Week 2 content
-        - ✅ Design templates for recurring content types
-        - ✅ Research competitor content strategies
-        
-        ### Week 2 Planning
-        - Create content for Jan 7, 8, 9, 10
-        - Schedule approval workflow with Joy/COO
-        - Build content library folder structure
-        - Set up Canva brand kit with Purple Crayolá assets
-        """)
-        
-        st.divider()
-        
-        st.markdown("## 🎯 30-Day Milestones")
-        
-        milestones_data = {
-            'Week': ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
-            'Key Milestone': [
-                'Foundation Setup',
-                'Consistency Building',
-                'Team Integration',
-                'Performance Review'
-            ],
-            'Deliverables': [
-                'Access to all platforms, baseline audit, 4-5 posts',
-                'Content calendar created, 4-5 posts, templates built',
-                'Team spotlights launched, 4-5 posts, engagement up',
-                'Month-end report, case study published, Feb plan ready'
-            ],
-            'Success Metric': [
-                'All systems operational',
-                '80%+ posting consistency',
-                'Positive team feedback',
-                'Data-driven insights'
-            ]
-        }
-        
-        milestones_df = pd.DataFrame(milestones_data)
-        st.dataframe(milestones_df, use_container_width=True, hide_index=True)
 
 # Footer
 st.divider()
@@ -1004,6 +794,6 @@ st.markdown("""
 <div style="text-align: center; color: #6B46C1; padding: 20px;">
     <h4>🎨 Purple Crayolá Content Strategy</h4>
     <p>January 2026 - Strategic Digital Transformation</p>
-    <p style="font-size: 12px; color: #999;">Confidential • For Internal Use Only • Version 1.0</p>
+    <p style="font-size: 12px; color: #999;">Version 1.0</p>
 </div>
 """, unsafe_allow_html=True)
