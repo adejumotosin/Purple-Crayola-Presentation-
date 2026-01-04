@@ -15,51 +15,107 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    * {
+        font-family: 'Inter', sans-serif;
+    }
+    
     .main {
-        background-color: #f8f9fa;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     }
+    
     .stMetric {
-        background-color: white;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .content-card {
-        background-color: white;
+        background: white;
         padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+        border-left: 4px solid #6B46C1;
+    }
+    
+    .stMetric label {
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        color: #64748b !important;
+    }
+    
+    .stMetric [data-testid="stMetricValue"] {
+        font-size: 32px !important;
+        font-weight: 700 !important;
+        color: #1e293b !important;
+    }
+    
+    .stMetric [data-testid="stMetricDelta"] {
+        font-size: 13px !important;
+    }
+    
+    .content-card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.07);
         margin-bottom: 20px;
+        border-top: 3px solid #6B46C1;
     }
+    
     h1 {
-        color: #6B46C1;
+        color: #1e293b;
+        font-weight: 700;
+        letter-spacing: -0.5px;
     }
+    
     h2 {
-        color: #553C9A;
+        color: #334155;
+        font-weight: 600;
+        margin-top: 2rem;
     }
+    
     h3 {
         color: #6B46C1;
+        font-weight: 600;
     }
+    
     .highlight {
-        background-color: #EDE9FE;
-        padding: 15px;
-        border-radius: 8px;
+        background: linear-gradient(135deg, #EDE9FE 0%, #DBEAFE 100%);
+        padding: 20px;
+        border-radius: 10px;
         border-left: 4px solid #6B46C1;
-        margin: 10px 0;
+        margin: 15px 0;
+    }
+    
+    .sidebar .sidebar-content {
+        background: linear-gradient(180deg, #6B46C1 0%, #553C9A 100%);
+    }
+    
+    [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #6B46C1 0%, #553C9A 100%);
+    }
+    
+    [data-testid="stSidebar"] * {
+        color: white !important;
+    }
+    
+    .author-badge {
+        background: rgba(255,255,255,0.1);
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 20px;
+        backdrop-filter: blur(10px);
     }
     </style>
 """, unsafe_allow_html=True)
 
 # Sidebar
 with st.sidebar:
-    # Display the Purple Crayolá logo
+    # Display the Purple Crayolá logo (smaller)
     try:
-        st.image("logo.png", use_container_width=True)
+        st.image("logo.png", width=120)
     except:
         st.markdown("""
-            <div style="text-align: center; padding: 20px 0;">
-                <h2 style="color: #6B46C1; margin: 5px 0;">Purple Crayolá</h2>
-                <p style="color: #999; font-size: 12px; margin: 0;">Digital Transformation</p>
+            <div style="text-align: center; padding: 10px 0;">
+                <h3 style="color: white; margin: 5px 0;">Purple Crayolá</h3>
+                <p style="color: rgba(255,255,255,0.8); font-size: 12px; margin: 0;">Digital Transformation</p>
             </div>
         """, unsafe_allow_html=True)
     
@@ -72,6 +128,17 @@ with st.sidebar:
     )
     
     st.divider()
+    
+    # Author section
+    st.markdown("""
+        <div class="author-badge">
+            <p style="font-size: 11px; margin: 0; opacity: 0.8;">DEVELOPED BY</p>
+            <p style="font-size: 15px; font-weight: 600; margin: 5px 0;">Oluwatosin Adejumo</p>
+            <p style="font-size: 11px; margin: 0; opacity: 0.8;">Content & Social Media Manager</p>
+        </div>
+    """, unsafe_allow_html=True)
+    
+    st.divider()
     st.caption("**Strategy Period:** January 2026")
     st.caption("**Document Version:** 1.0")
 
@@ -82,13 +149,29 @@ if page == "Overview":
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        st.metric("Target Posts", "12-15", "Monthly")
+        st.metric(
+            label="Target Posts",
+            value="12-15",
+            delta="Monthly"
+        )
     with col2:
-        st.metric("Platforms", "3", "LinkedIn, Instagram, Twitter/X")
+        st.metric(
+            label="Platforms",
+            value="3",
+            delta="LinkedIn, Instagram, Twitter/X"
+        )
     with col3:
-        st.metric("Content Themes", "4", "Strategic Pillars")
+        st.metric(
+            label="Content Themes",
+            value="4",
+            delta="Strategic Pillars"
+        )
     with col4:
-        st.metric("Expected Growth", "1-3%", "Conservative Target")
+        st.metric(
+            label="Expected Growth",
+            value="1-3%",
+            delta="Conservative Target"
+        )
     
     st.divider()
     
@@ -794,9 +877,9 @@ elif page == "KPIs & Goals":
 # Footer
 st.divider()
 st.markdown("""
-<div style="text-align: center; color: #6B46C1; padding: 20px;">
-    <h4>🎨 Purple Crayolá Content Strategy</h4>
-    <p>January 2026 - Strategic Digital Transformation</p>
-    <p style="font-size: 12px; color: #999;">Version 1.0</p>
+<div style="text-align: center; padding: 30px 20px; background: white; border-radius: 12px; margin-top: 40px;">
+    <h4 style="color: #6B46C1; margin-bottom: 10px;">🎨 Purple Crayolá Content Strategy</h4>
+    <p style="color: #64748b; margin: 5px 0;">January 2026 - Strategic Digital Transformation</p>
+    <p style="font-size: 12px; color: #94a3b8; margin-top: 15px;">Developed by Oluwatosin Adejumo • Version 1.0</p>
 </div>
 """, unsafe_allow_html=True)
