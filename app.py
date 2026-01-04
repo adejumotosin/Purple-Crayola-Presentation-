@@ -53,13 +53,15 @@ st.markdown("""
 # Sidebar
 with st.sidebar:
     # Display the Purple Crayolá logo
-    st.markdown("""
-        <div style="text-align: center; padding: 20px 0;">
-            <h1 style="color: #6B46C1; font-size: 48px; margin: 0;">🎨</h1>
-            <h2 style="color: #6B46C1; margin: 5px 0;">Purple Crayolá</h2>
-            <p style="color: #999; font-size: 12px; margin: 0;">Digital Transformation</p>
-        </div>
-    """, unsafe_allow_html=True)
+    try:
+        st.image("logo.png", use_container_width=True)
+    except:
+        st.markdown("""
+            <div style="text-align: center; padding: 20px 0;">
+                <h2 style="color: #6B46C1; margin: 5px 0;">Purple Crayolá</h2>
+                <p style="color: #999; font-size: 12px; margin: 0;">Digital Transformation</p>
+            </div>
+        """, unsafe_allow_html=True)
     
     st.divider()
     st.title("📊 Navigation")
@@ -766,12 +768,12 @@ elif page == "KPIs & Goals":
     
     months_data = {
         'Month': ['January', 'February', 'March'],
-        'Focus': ['Foundation & Learning', 'Optimization & Growth', 'Scale & Acceleration'],
-        'Expected Growth': ['1-3%', '5-8%', '10-15%'],
+        'Focus': ['Foundation & Learning', 'Optimization & Iteration', 'Consistency & Refinement'],
+        'Expected Growth': ['1-3%', '3-5%', '5-8%'],
         'Key Activities': [
             'Build systems, learn audience, establish consistency',
-            'Optimize based on data, increase frequency, test formats',
-            'Scale successful content, launch campaigns, build community'
+            'Optimize based on data, refine content approach',
+            'Scale proven content types, expand successful formats'
         ]
     }
     
@@ -783,8 +785,9 @@ elif page == "KPIs & Goals":
     <h4>💡 Strategic Approach</h4>
     <p>This strategy prioritizes building a strong foundation in January—consistent 
     quality content, understanding audience preferences, and establishing robust systems. 
-    Modest initial growth (1-3%) positions us for acceleration in Q1 as we leverage 
-    performance data and audience insights.</p>
+    Growth will be gradual and sustainable, with each month building on learnings from 
+    the previous period. Significant momentum typically develops in months 3-6 as 
+    audience relationships deepen and content strategy matures.</p>
     </div>
     """, unsafe_allow_html=True)
 
