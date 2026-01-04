@@ -139,39 +139,53 @@ with st.sidebar:
     """, unsafe_allow_html=True)
     
     st.divider()
-    st.caption("**Strategy Period:** January 2026")
+    st.caption("**Strategy Period:** January 6-30, 2026")
     st.caption("**Document Version:** 1.0")
 
 # Main content
 if page == "Overview":
     st.title("🎨 Purple Crayolá - January 2026 Content Strategy")
     st.markdown("### Digital Transformation Through Strategic Content")
+    st.markdown("**Strategy Period:** January 6 - January 30, 2026")
+    
+    st.markdown("<br>", unsafe_allow_html=True)
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        st.metric(
-            label="Target Posts",
-            value="12-15",
-            delta="Monthly"
-        )
+        st.markdown("""
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07); border-left: 4px solid #6B46C1; min-height: 140px;">
+                <p style="font-size: 14px; font-weight: 500; color: #64748b; margin-bottom: 10px;">Target Posts</p>
+                <p style="font-size: 36px; font-weight: 700; color: #1e293b; margin: 0;">12-15</p>
+                <p style="font-size: 13px; color: #10b981; margin-top: 8px;">↑ Monthly</p>
+            </div>
+        """, unsafe_allow_html=True)
+    
     with col2:
-        st.metric(
-            label="Platforms",
-            value="3",
-            delta="LinkedIn, Instagram, Twitter/X"
-        )
+        st.markdown("""
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07); border-left: 4px solid #6B46C1; min-height: 140px;">
+                <p style="font-size: 14px; font-weight: 500; color: #64748b; margin-bottom: 10px;">Platforms</p>
+                <p style="font-size: 36px; font-weight: 700; color: #1e293b; margin: 0;">3</p>
+                <p style="font-size: 13px; color: #10b981; margin-top: 8px;">↑ LinkedIn, Instagram, Twitter/X</p>
+            </div>
+        """, unsafe_allow_html=True)
+    
     with col3:
-        st.metric(
-            label="Content Themes",
-            value="4",
-            delta="Strategic Pillars"
-        )
+        st.markdown("""
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07); border-left: 4px solid #6B46C1; min-height: 140px;">
+                <p style="font-size: 14px; font-weight: 500; color: #64748b; margin-bottom: 10px;">Content Themes</p>
+                <p style="font-size: 36px; font-weight: 700; color: #1e293b; margin: 0;">4</p>
+                <p style="font-size: 13px; color: #10b981; margin-top: 8px;">↑ Strategic Pillars</p>
+            </div>
+        """, unsafe_allow_html=True)
+    
     with col4:
-        st.metric(
-            label="Expected Growth",
-            value="1-3%",
-            delta="Conservative Target"
-        )
+        st.markdown("""
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07); border-left: 4px solid #6B46C1; min-height: 140px;">
+                <p style="font-size: 14px; font-weight: 500; color: #64748b; margin-bottom: 10px;">Expected Growth</p>
+                <p style="font-size: 36px; font-weight: 700; color: #1e293b; margin: 0;">1-3%</p>
+                <p style="font-size: 13px; color: #10b981; margin-top: 8px;">↑ Conservative Target</p>
+            </div>
+        """, unsafe_allow_html=True)
     
     st.divider()
     
@@ -272,21 +286,20 @@ elif page == "Weekly Breakdown":
     
     week = st.selectbox(
         "Select Week:",
-        ["Week 1: January 2-5 (New Beginnings)",
-         "Week 2: January 6-12 (Solutions Spotlight)",
-         "Week 3: January 13-19 (Team & Culture)",
-         "Week 4: January 20-26 (Authority Building)",
-         "Week 5: January 27-31 (Month-End Push)"]
+        ["Week 1: January 6-10 (New Beginnings)",
+         "Week 2: January 13-17 (Solutions Spotlight)",
+         "Week 3: January 20-24 (Team & Culture)",
+         "Week 4: January 27-30 (Authority Building)"]
     )
     
     if "Week 1" in week:
-        st.markdown("## 🎉 Week 1: New Beginnings (January 2-5)")
+        st.markdown("## 🎉 Week 1: New Beginnings (January 6-10)")
         
         tab1, tab2, tab3 = st.tabs(["LinkedIn", "Instagram", "Twitter/X"])
         
         with tab1:
             st.markdown("""
-            ### Post 1: New Year Vision (Jan 2)
+            ### Post 1: New Year Vision (Jan 6)
             
             **Content:**  
             "2026: The Year of Digital Excellence. As businesses reset and reimagine their strategies, 
@@ -298,7 +311,7 @@ elif page == "Weekly Breakdown":
             
             ---
             
-            ### Post 2: Industry Trends (Jan 4)
+            ### Post 2: Industry Trends (Jan 8)
             
             **Content:** "5 Digital Transformation Trends Shaping Nigerian Businesses in 2026"  
             **Format:** Infographic or short video (30-60 seconds)  
@@ -307,7 +320,7 @@ elif page == "Weekly Breakdown":
         
         with tab2:
             st.markdown("""
-            ### Welcome 2026 Story Series (Jan 2-3)
+            ### Welcome 2026 Story Series (Jan 6-7)
             
             - Quick polls: "What's your biggest digital challenge in 2026?"
             - Behind-the-scenes of team planning sessions
@@ -315,7 +328,7 @@ elif page == "Weekly Breakdown":
             
             ---
             
-            ### Feed Post (Jan 5)
+            ### Feed Post (Jan 9)
             
             **Content:** "3 Signs Your Business Needs Digital Transformation in 2026"  
             **Format:** Carousel post with clean graphics, one sign per slide  
@@ -332,13 +345,13 @@ elif page == "Weekly Breakdown":
             """)
     
     elif "Week 2" in week:
-        st.markdown("## 💡 Week 2: Solutions Spotlight (January 6-12)")
+        st.markdown("## 💡 Week 2: Solutions Spotlight (January 13-17)")
         
         tab1, tab2, tab3 = st.tabs(["LinkedIn", "Instagram", "Twitter/X"])
         
         with tab1:
             st.markdown("""
-            ### Post 1: Service Showcase - Web Development (Jan 7)
+            ### Post 1: Service Showcase - Web Development (Jan 13)
             
             **Content:**  
             "Your Website is Your Digital Storefront. Is it converting visitors into customers? 
@@ -350,7 +363,7 @@ elif page == "Weekly Breakdown":
             
             ---
             
-            ### Post 2: Thought Leadership Article (Jan 9)
+            ### Post 2: Thought Leadership Article (Jan 15)
             
             **Content:** "Why Nigerian Businesses Can't Afford to Ignore Mobile-First Design in 2026"  
             **Format:** LinkedIn article (800-1000 words)  
@@ -359,7 +372,7 @@ elif page == "Weekly Breakdown":
         
         with tab2:
             st.markdown("""
-            ### Service Carousel (Jan 8)
+            ### Service Carousel (Jan 14)
             
             **Content:** "What We Do at Purple Crayolá"  
             **Slides:** Digital Strategy → Web/App Dev → Digital Marketing → Branding → Learning Solutions  
@@ -367,7 +380,7 @@ elif page == "Weekly Breakdown":
             
             ---
             
-            ### Client Testimonial Post (Jan 10)
+            ### Client Testimonial Post (Jan 16)
             
             - Feature client testimonial
             - Designed quote graphic with client photo/logo if available
@@ -384,13 +397,13 @@ elif page == "Weekly Breakdown":
             """)
     
     elif "Week 3" in week:
-        st.markdown("## 👥 Week 3: Team & Culture (January 13-19)")
+        st.markdown("## 👥 Week 3: Team & Culture (January 20-24)")
         
         tab1, tab2, tab3 = st.tabs(["LinkedIn", "Instagram", "Twitter/X"])
         
         with tab1:
             st.markdown("""
-            ### Post 1: Team Spotlight (Jan 14)
+            ### Post 1: Team Spotlight (Jan 20)
             
             **Content:** Introduce key team members  
             **Format:** Professional photo + mini Q&A about their role and vision  
@@ -398,7 +411,7 @@ elif page == "Weekly Breakdown":
             
             ---
             
-            ### Post 2: Process Post (Jan 16)
+            ### Post 2: Process Post (Jan 22)
             
             **Content:** "How We Transform Ideas into Digital Reality: The Purple Crayolá Process"  
             **Format:** Infographic showing: Discovery → Strategy → Design → Development → Launch → Optimize  
@@ -407,7 +420,7 @@ elif page == "Weekly Breakdown":
         
         with tab2:
             st.markdown("""
-            ### "Day in the Life" Stories (Jan 13-15)
+            ### "Day in the Life" Stories (Jan 20-21)
             
             - Follow team members through their workday
             - Show office culture, brainstorming sessions, client calls
@@ -415,7 +428,7 @@ elif page == "Weekly Breakdown":
             
             ---
             
-            ### Culture Post (Jan 18)
+            ### Culture Post (Jan 23)
             
             **Content:** "What makes Purple Crayolá different?"  
             **Format:** Photo carousel of team collaboration, office vibes, project work  
@@ -431,14 +444,14 @@ elif page == "Weekly Breakdown":
             - Engage with industry conversations
             """)
     
-    elif "Week 4" in week:
-        st.markdown("## 🏆 Week 4: Authority Building (January 20-26)")
+    else:  # Week 4
+        st.markdown("## 🏆 Week 4: Authority Building (January 27-30)")
         
         tab1, tab2, tab3 = st.tabs(["LinkedIn", "Instagram", "Twitter/X"])
         
         with tab1:
             st.markdown("""
-            ### Post 1: Case Study Deep Dive (Jan 21)
+            ### Post 1: Case Study Deep Dive (Jan 27)
             
             **Content:** Full case study of a successful project  
             **Format:** Challenge → Solution → Results → Client Impact  
@@ -446,7 +459,7 @@ elif page == "Weekly Breakdown":
             
             ---
             
-            ### Post 2: Industry Commentary (Jan 23)
+            ### Post 2: Industry Commentary (Jan 29)
             
             **Content:** Respond to a trending tech topic in Nigeria/Africa  
             **Purpose:** Position Purple Crayolá as thought leaders  
@@ -455,7 +468,7 @@ elif page == "Weekly Breakdown":
         
         with tab2:
             st.markdown("""
-            ### Educational Carousel (Jan 22)
+            ### Educational Carousel (Jan 28)
             
             **Content:** "5 Common Website Mistakes Killing Your Conversions"  
             **Purpose:** Demonstrate expertise with practical value  
@@ -463,10 +476,10 @@ elif page == "Weekly Breakdown":
             
             ---
             
-            ### Interactive Post (Jan 25)
+            ### Month-End Teaser (Jan 30)
             
-            **Content:** "Caption this!" or "What feature would you add to your dream app?"  
-            **Purpose:** Drive engagement and community building
+            **Content:** "February is going to be exciting! Here's what's coming..."  
+            **Purpose:** Build anticipation for next month's content
             """)
         
         with tab3:
@@ -476,54 +489,11 @@ elif page == "Weekly Breakdown":
             - Share blog post or article
             - Tech Thursday: Industry insights
             - Weekend engagement: Light, fun tech-related content
+            - Month-end wrap: "January insights from Purple Crayolá"
             """)
     
-    else:  # Week 5
-        st.markdown("## 🎯 Week 5: Month-End Push (January 27-31)")
-        
-        tab1, tab2, tab3 = st.tabs(["LinkedIn", "Instagram", "Twitter/X"])
-        
-        with tab1:
-            st.markdown("""
-            ### Post 1: Success Metrics (Jan 28)
-            
-            **Content:** "The ROI of Digital Transformation: Real Numbers from Real Clients"  
-            **Format:** Data visualization showing impact  
-            **Purpose:** Build credibility with concrete results
-            
-            ---
-            
-            ### Post 2: CTA Campaign (Jan 30)
-            
-            **Content:** "Ready to Transform Your Digital Presence? Let's Talk."  
-            **Format:** Professional design with clear CTA  
-            **Offer:** Special January offer or free consultation
-            """)
-        
-        with tab2:
-            st.markdown("""
-            ### Month in Review (Jan 29)
-            
-            - Recap of January content and highlights
-            - Stories: "Swipe through our January journey"
-            - Post: Carousel of best moments
-            
-            ---
-            
-            ### February Teaser (Jan 31)
-            
-            **Content:** "February is going to be exciting! Here's what's coming..."  
-            **Purpose:** Build anticipation for next month's content
-            """)
-        
-        with tab3:
-            st.markdown("""
-            ### Month-End Wrap Up
-            
-            - Wrap-up thread: "January insights from Purple Crayolá"
-            - Engage with followers who interacted throughout the month
-            - Weekend poll: "What content do you want to see in February?"
-            """)
+    st.divider()
+    st.info("💡 **Note:** Content dates are flexible and may be adjusted based on approval workflow and real-time opportunities.")
 
 elif page == "Platform Strategy":
     st.title("📱 Platform-Specific Strategy")
@@ -692,21 +662,18 @@ elif page == "Content Calendar":
     
     # Create calendar data
     calendar_data = {
-        'Date': ['Jan 2', 'Jan 3', 'Jan 4', 'Jan 5', 'Jan 7', 'Jan 8', 'Jan 9', 'Jan 10',
-                 'Jan 14', 'Jan 16', 'Jan 18', 'Jan 21', 'Jan 22', 'Jan 23', 'Jan 25',
-                 'Jan 28', 'Jan 29', 'Jan 30', 'Jan 31'],
+        'Date': ['Jan 6', 'Jan 7', 'Jan 8', 'Jan 9', 'Jan 13', 'Jan 14', 'Jan 15', 'Jan 16',
+                 'Jan 20', 'Jan 22', 'Jan 23', 'Jan 27', 'Jan 28', 'Jan 29', 'Jan 30'],
         'Platform': ['LinkedIn', 'Instagram', 'LinkedIn', 'Instagram', 'LinkedIn', 'Instagram',
                      'LinkedIn', 'Instagram', 'LinkedIn', 'LinkedIn', 'Instagram', 'LinkedIn',
-                     'Instagram', 'LinkedIn', 'Instagram', 'LinkedIn', 'Instagram', 'LinkedIn', 'Instagram'],
+                     'Instagram', 'LinkedIn', 'Instagram'],
         'Content Type': ['Carousel', 'Stories', 'Infographic', 'Carousel', 'Post', 'Carousel',
                         'Article', 'Testimonial', 'Team Spotlight', 'Process Post', 'Culture Post',
-                        'Case Study', 'Educational Carousel', 'Industry Commentary', 'Interactive Post',
-                        'Success Metrics', 'Month Review', 'CTA Campaign', 'February Teaser'],
+                        'Case Study', 'Educational Carousel', 'Industry Commentary', 'February Teaser'],
         'Theme': ['New Year', 'New Year', 'Trends', 'Transformation', 'Services', 'Services',
                  'Thought Leadership', 'Success Stories', 'Team', 'Team', 'Culture',
-                 'Authority', 'Authority', 'Authority', 'Engagement',
-                 'Results', 'Recap', 'CTA', 'Preview'],
-        'Status': ['Pending'] * 19
+                 'Authority', 'Authority', 'Authority', 'Preview'],
+        'Status': ['Pending'] * 15
     }
     
     df = pd.DataFrame(calendar_data)
