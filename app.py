@@ -858,7 +858,7 @@ else:  # Resources
     with tab3:
         st.markdown("## #️⃣ Hashtag Strategy")
         
-       ff col1, col2, col3 = st.columns(3)
+        col1, col2, col3 = st.columns(3)
         
         with col1:
             st.markdown("""
@@ -866,7 +866,8 @@ else:  # Resources
             Use these consistently:
             - #PurpleCrayolá
             - #DigitalTransformationNG
-            - #UserExperienceByDesign """)
+            - #UserExperienceByDesign
+            """)
         
         with col2:
             st.markdown("""
