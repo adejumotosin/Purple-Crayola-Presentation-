@@ -52,7 +52,16 @@ st.markdown("""
 
 # Sidebar
 with st.sidebar:
-    st.image("https://via.placeholder.com/200x80/6B46C1/FFFFFF?text=Purple+Crayola", use_container_width=True)
+    # Display the Purple Crayolá logo
+    st.markdown("""
+        <div style="text-align: center; padding: 20px 0;">
+            <h1 style="color: #6B46C1; font-size: 48px; margin: 0;">🎨</h1>
+            <h2 style="color: #6B46C1; margin: 5px 0;">Purple Crayolá</h2>
+            <p style="color: #999; font-size: 12px; margin: 0;">Digital Transformation</p>
+        </div>
+    """, unsafe_allow_html=True)
+    
+    st.divider()
     st.title("📊 Navigation")
     
     page = st.radio(
@@ -61,14 +70,15 @@ with st.sidebar:
     )
     
     st.divider()
-    st.caption("**Prepared by:** Oluwatosin Daniel Adejumo")
-    st.caption("**Role:** Content & Social Media Experience Manager")
-    st.caption("**Date:** January 2, 2026")
+    st.caption("**Strategy Period:** January 2026")
+    st.caption("**Document Version:** 1.0")
+    st.caption("**Last Updated:** January 2, 2026")
 
 # Main content
 if page == "Overview":
     st.title("🎨 Purple Crayolá - January 2026 Content Strategy")
     st.markdown("### Digital Transformation Through Strategic Content")
+    st.markdown("**Prepared for:** Chief Operations Officer | **Strategy Owner:** Content & Social Media Team")
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -688,7 +698,7 @@ elif page == "KPIs & Goals":
         
         st.markdown("""
         #### Why Conservative?
-        - You're new and learning the brand
+        - Learning the brand and audience
         - January is typically slow post-holidays
         - Algorithm needs time to understand posting patterns
         - Quality foundation > vanity metrics
@@ -772,8 +782,8 @@ elif page == "KPIs & Goals":
     st.markdown("""
     <div class="highlight">
     <h4>💡 Setting Expectations with Leadership</h4>
-    <p><strong>Recommended approach:</strong> "I'm focused on building a strong foundation in January—consistent 
-    quality content, understanding our audience, and establishing systems. I expect modest growth (1-3%) as we 
+    <p><strong>Recommended approach:</strong> "Focus on building a strong foundation in January—consistent 
+    quality content, understanding our audience, and establishing systems. Expect modest growth (1-3%) as we 
     learn what resonates, with acceleration in months 2-3 once we have performance data."</p>
     </div>
     """, unsafe_allow_html=True)
@@ -867,12 +877,14 @@ else:  # Resources
             - #PurpleCrayolá
             - #DigitalTransformationNG
             - #UserExperienceByDesign
+            
+            **Usage:** Include in every post
             """)
         
         with col2:
             st.markdown("""
             ### Industry Hashtags
-            Mix and match:
+            Rotate these for reach:
             - #DigitalTransformation
             - #WebDevelopment
             - #DigitalMarketing
@@ -880,161 +892,118 @@ else:  # Resources
             - #NigerianStartups
             - #BusinessGrowth
             - #UXDesign
-            - #TechStartup
             - #Innovation
+            
+            **Usage:** 3-5 per post on Instagram, 2-3 on LinkedIn
             """)
         
         with col3:
             st.markdown("""
             ### Engagement Hashtags
-            Day-specific:
-            - #MotivationMonday
+            Use for specific posts:
             - #TechTuesday
-            - #WednesdayWisdom
-            - #ThrowbackThursday
+            - #MotivationMonday
             - #FridayThoughts
-            - #WeekendVibes
+            - #ThrowbackThursday
+            - #WebsiteTips
+            - #StartupLife
+            - #TechTips
+            
+            **Usage:** Match to content theme
             """)
         
         st.divider()
         
         st.markdown("""
-        ### 📝 Hashtag Best Practices
+        ### 📋 Hashtag Best Practices
         
         **LinkedIn:**
-        - Use 3-5 hashtags per post
+        - Use 3-5 hashtags maximum
+        - Place at the end of the post
         - Mix branded + industry hashtags
-        - Place hashtags naturally in copy or at end
+        - Avoid overly generic tags
         
         **Instagram:**
-        - Use 10-15 hashtags per post
-        - Mix of high, medium, and low competition tags
+        - Use 8-15 hashtags
         - Can place in caption or first comment
-        - Use all 10 hashtag slots in stories
+        - Mix high, medium, and low competition tags
+        - Create a branded hashtag for campaigns
         
         **Twitter/X:**
-        - Use 1-2 hashtags per tweet
-        - Keep them relevant and timely
-        - Participate in trending conversations when appropriate
+        - Use 1-3 hashtags maximum
+        - Integrate naturally into tweet text
+        - Join trending conversations when relevant
+        - Keep hashtags concise
         """)
     
     with tab4:
-        st.markdown("## 🚀 Quick Wins for First Week")
+        st.markdown("## ⚡ Quick Wins for First Week")
         
         st.markdown("""
-        <div class="highlight">
-        <h3>Day 1-2: Setup & Foundation</h3>
-        <ul>
-        <li>✅ Get access to all social media accounts</li>
-        <li>✅ Audit current content and performance baseline</li>
-        <li>✅ Introduce yourself via Instagram stories</li>
-        <li>✅ Review brand guidelines and tone of voice</li>
-        <li>✅ Set up content calendar template</li>
-        </ul>
-        </div>
+        ### Day 1 (Thursday, January 2)
+        - ✅ Get access to all social media accounts
+        - ✅ Audit current follower counts and baseline metrics
+        - ✅ Review last 30 days of content performance
+        - ✅ Set up analytics tracking spreadsheet
+        - ✅ Introduce via Instagram stories
+        - ✅ Post New Year vision content on LinkedIn
         
-        <div class="highlight">
-        <h3>Day 3: Launch Content</h3>
-        <ul>
-        <li>📱 Post New Year vision content across all platforms</li>
-        <li>📊 Monitor engagement and respond to comments</li>
-        <li>🎯 Document what works/doesn't work</li>
-        </ul>
-        </div>
+        ### Day 2 (Friday, January 3)
+        - ✅ Continue Instagram story series (polls, BTS)
+        - ✅ Set up content calendar template (Google Sheets/Notion)
+        - ✅ Review brand guidelines and tone of voice
+        - ✅ Identify top-performing content types
+        - ✅ Create list of content ideas for Week 2
         
-        <div class="highlight">
-        <h3>Day 4: Build Momentum</h3>
-        <ul>
-        <li>📈 Share industry trends post on LinkedIn</li>
-        <li>💬 Engage with 10-15 industry accounts</li>
-        <li>📝 Start drafting Week 2 content</li>
-        </ul>
-        </div>
+        ### Weekend (January 4-5)
+        - ✅ Post industry trends content on LinkedIn
+        - ✅ Post carousel on Instagram about digital transformation
+        - ✅ Plan and schedule Week 2 content
+        - ✅ Design templates for recurring content types
+        - ✅ Research competitor content strategies
         
-        <div class="highlight">
-        <h3>Day 5: Establish Consistency</h3>
-        <ul>
-        <li>🎨 Post carousel about digital transformation signs</li>
-        <li>📅 Schedule Week 2 content in advance</li>
-        <li>📊 Review Week 1 analytics</li>
-        </ul>
-        </div>
-        
-        <div class="highlight">
-        <h3>Weekend: Plan Ahead</h3>
-        <ul>
-        <li>📝 Create content for Week 2</li>
-        <li>🎨 Design graphics and carousels</li>
-        <li>📋 Prepare approval workflow with Joy/COO</li>
-        <li>📊 Set up analytics tracking dashboard</li>
-        </ul>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        st.divider()
-        
-        st.markdown("## 💡 Pro Tips for Success")
-        
-        tips_col1, tips_col2 = st.columns(2)
-        
-        with tips_col1:
-            st.markdown("""
-            ### Content Creation Tips
-            - **Batch create content** - Set aside 2-3 hours to create multiple posts at once
-            - **Use templates** - Create reusable templates for faster production
-            - **Keep a swipe file** - Save inspiring content from other brands
-            - **Plan ahead** - Always have 3-5 posts ready in reserve
-            - **Repurpose content** - One blog post = LinkedIn article + Instagram carousel + Twitter thread
-            """)
-        
-        with tips_col2:
-            st.markdown("""
-            ### Engagement Tips
-            - **Respond quickly** - Aim for <2 hour response time during business hours
-            - **Ask questions** - End posts with engaging questions
-            - **Tag strategically** - Mention relevant brands, partners, team members
-            - **Use stories actively** - Post to stories daily for algorithm favor
-            - **Engage first** - Spend 15 mins engaging with others before posting your content
-            """)
-        
-        st.divider()
-        
-        st.markdown("## 📋 Monthly Checklist")
-        
-        checklist_items = [
-            ("Week 1", "Foundation setup, access accounts, audit baseline, launch first posts"),
-            ("Week 2", "Establish posting rhythm, test content types, engage with community"),
-            ("Week 3", "Introduce team/culture, optimize based on early data, build relationships"),
-            ("Week 4", "Showcase authority with case studies, increase engagement tactics"),
-            ("Week 5", "Month-end push, review analytics, plan February content"),
-        ]
-        
-        for week, tasks in checklist_items:
-            st.checkbox(f"**{week}:** {tasks}", key=f"checklist_{week}")
-        
-        st.divider()
-        
-        st.markdown("""
-        ## 🎯 Key Success Indicators
-        
-        By end of January, you should have:
-        
-        ✅ **Consistent Presence** - Posted 80-90% of planned content  
-        ✅ **Systems Established** - Content calendar, approval workflow, analytics tracking  
-        ✅ **Brand Understanding** - Clear grasp of Purple Crayolá's voice and audience  
-        ✅ **Baseline Data** - Performance metrics to inform February strategy  
-        ✅ **Community Building** - Relationships with 10-15 key industry accounts  
-        ✅ **Lead Generation** - 2-5 meaningful business inquiries  
-        ✅ **Template Library** - Reusable content templates for efficiency  
-        ✅ **Approval Process** - Clear workflow with Joy and COO  
+        ### Week 2 Planning
+        - Create content for Jan 7, 8, 9, 10
+        - Schedule approval workflow with Joy/COO
+        - Build content library folder structure
+        - Set up Canva brand kit with Purple Crayolá assets
         """)
+        
+        st.divider()
+        
+        st.markdown("## 🎯 30-Day Milestones")
+        
+        milestones_data = {
+            'Week': ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+            'Key Milestone': [
+                'Foundation Setup',
+                'Consistency Building',
+                'Team Integration',
+                'Performance Review'
+            ],
+            'Deliverables': [
+                'Access to all platforms, baseline audit, 4-5 posts',
+                'Content calendar created, 4-5 posts, templates built',
+                'Team spotlights launched, 4-5 posts, engagement up',
+                'Month-end report, case study published, Feb plan ready'
+            ],
+            'Success Metric': [
+                'All systems operational',
+                '80%+ posting consistency',
+                'Positive team feedback',
+                'Data-driven insights'
+            ]
+        }
+        
+        milestones_df = pd.DataFrame(milestones_data)
+        st.dataframe(milestones_df, use_container_width=True, hide_index=True)
 
 # Footer
 st.divider()
 st.markdown("""
-    <div style='text-align: center; color: #6B46C1; padding: 20px;'>
-        <p><strong>Purple Crayolá - January 2026 Content Strategy</strong></p>
-        <p>Prepared by: Oluwatosin Daniel Adejumo | Content & Social Media Experience Manager</p>
-        <p style='font-size: 0.9em; color: #888;'>Foundation Over Growth • Quality Over Quantity • Consistency Over Perfection</p>
-    </div>
+<div style="text-align: center; color: #6B46C1; padding: 20px;">
+    <h4>🎨 Purple Crayolá Content Strategy</h4>
+    <p>January 2026 - Strategic Digital Transformation</p>
+    <p style="font-size: 12px; color: #999;">Confidential • For Internal Use Only • Version 1.0</p>
+</div>
 """, unsafe_allow_html=True)
