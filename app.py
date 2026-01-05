@@ -833,7 +833,7 @@ elif page == "KPIs & Goals":
     st.markdown("""
     <div class="highlight">
     <h4> Strategic Approach</h4>
-    <p>This strategy prioritizes building a strong foundation in January—consistent 
+    <p>This strategy prioritizes building a strong foundation in January, consistent 
     quality content, understanding audience preferences, and establishing robust systems. 
     Growth will be gradual and sustainable, with each month building on learnings from 
     the previous period. Significant momentum typically develops in months 3-6 as 
