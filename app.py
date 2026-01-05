@@ -190,7 +190,7 @@ if page == "Overview":
     st.divider()
     
     # Brand Overview
-    st.markdown("## 🏢 Brand Overview")
+    st.markdown("##  Brand Overview")
     col1, col2 = st.columns([2, 1])
     
     with col1:
@@ -199,12 +199,12 @@ if page == "Overview":
         design and digital solutions to transform customer experiences and business results.
         
         **Core Services:**
-        - 🎯 Digital Strategy & Transformation
-        - 💻 Web & Mobile App Development
-        - 📱 Digital Marketing (SEO, Content, Social Media, PPC)
-        - 🎨 Branding & Identity Design
-        - 📊 Project & Product Management
-        - 📚 Digital Learning Solutions
+        -  Digital Strategy & Transformation
+        -  Web & Mobile App Development
+        -  Digital Marketing (SEO, Content, Social Media, PPC)
+        -  Branding & Identity Design
+        -  Project & Product Management
+        -  Digital Learning Solutions
         """)
     
     with col2:
@@ -220,19 +220,19 @@ if page == "Overview":
     st.divider()
     
     # Content Themes
-    st.markdown("## 🎯 January 2026 Content Themes")
+    st.markdown("##  January 2026 Content Themes")
     
     themes_col1, themes_col2 = st.columns(2)
     
     with themes_col1:
         st.markdown("""
         <div class="content-card">
-        <h3>🚀 Theme 1: New Year, Digital Transformation</h3>
+        <h3> Theme 1: New Year, Digital Transformation</h3>
         <p>Capitalize on the new year energy and businesses setting digital goals.</p>
         </div>
         
         <div class="content-card">
-        <h3>📊 Theme 2: Case Studies & Success Stories</h3>
+        <h3> Theme 2: Case Studies & Success Stories</h3>
         <p>Showcase real impact and client testimonials.</p>
         </div>
         """, unsafe_allow_html=True)
@@ -240,12 +240,12 @@ if page == "Overview":
     with themes_col2:
         st.markdown("""
         <div class="content-card">
-        <h3>📈 Theme 3: Digital Trends 2026</h3>
+        <h3> Theme 3: Digital Trends 2026</h3>
         <p>Position as thought leaders on emerging tech and digital strategies.</p>
         </div>
         
         <div class="content-card">
-        <h3>👥 Theme 4: Behind the Scenes</h3>
+        <h3> Theme 4: Behind the Scenes</h3>
         <p>Humanize the brand, introduce team members, show process.</p>
         </div>
         """, unsafe_allow_html=True)
@@ -253,7 +253,7 @@ if page == "Overview":
     st.divider()
     
     # Content Pillars
-    st.markdown("## 📊 Content Pillars Distribution")
+    st.markdown("##  Content Pillars Distribution")
     
     pillars_data = {
         'Pillar': ['Educational', 'Promotional', 'Engagement', 'Behind-the-Scenes'],
@@ -282,7 +282,7 @@ if page == "Overview":
     st.plotly_chart(fig, use_container_width=True)
 
 elif page == "Weekly Breakdown":
-    st.title("📅 Weekly Content Breakdown")
+    st.title(" Weekly Content Breakdown")
     
     week = st.selectbox(
         "Select Week:",
@@ -293,7 +293,7 @@ elif page == "Weekly Breakdown":
     )
     
     if "Week 1" in week:
-        st.markdown("## 🎉 Week 1: New Beginnings (January 6-10)")
+        st.markdown("##  Week 1: New Beginnings (January 6-10)")
         
         tab1, tab2, tab3 = st.tabs(["LinkedIn", "Instagram", "Twitter/X"])
         
@@ -345,7 +345,7 @@ elif page == "Weekly Breakdown":
             """)
     
     elif "Week 2" in week:
-        st.markdown("## 💡 Week 2: Solutions Spotlight (January 13-17)")
+        st.markdown("##  Week 2: Solutions Spotlight (January 13-17)")
         
         tab1, tab2, tab3 = st.tabs(["LinkedIn", "Instagram", "Twitter/X"])
         
@@ -397,7 +397,7 @@ elif page == "Weekly Breakdown":
             """)
     
     elif "Week 3" in week:
-        st.markdown("## 👥 Week 3: Team & Culture (January 20-24)")
+        st.markdown("##  Week 3: Team & Culture (January 20-24)")
         
         tab1, tab2, tab3 = st.tabs(["LinkedIn", "Instagram", "Twitter/X"])
         
@@ -445,7 +445,7 @@ elif page == "Weekly Breakdown":
             """)
     
     else:  # Week 4
-        st.markdown("## 🏆 Week 4: Authority Building (January 27-30)")
+        st.markdown("##  Week 4: Authority Building (January 27-30)")
         
         tab1, tab2, tab3 = st.tabs(["LinkedIn", "Instagram", "Twitter/X"])
         
@@ -493,10 +493,10 @@ elif page == "Weekly Breakdown":
             """)
     
     st.divider()
-    st.info("💡 **Note:** Content dates are flexible and may be adjusted based on approval workflow and real-time opportunities.")
+    st.info(" **Note:** Content dates are flexible and may be adjusted based on approval workflow and real-time opportunities.")
 
 elif page == "Platform Strategy":
-    st.title("📱 Platform-Specific Strategy")
+    st.title(" Platform-Specific Strategy")
     
     platform = st.selectbox(
         "Select Platform:",
@@ -508,7 +508,7 @@ elif page == "Platform Strategy":
         
         with col1:
             st.markdown("""
-            ## 💼 LinkedIn Strategy
+            ##  LinkedIn Strategy
             
             ### Primary B2B Platform
             
@@ -560,7 +560,7 @@ elif page == "Platform Strategy":
         
         with col1:
             st.markdown("""
-            ## 📸 Instagram Strategy
+            ##  Instagram Strategy
             
             ### Visual Storytelling Platform
             
@@ -610,7 +610,7 @@ elif page == "Platform Strategy":
         
         with col1:
             st.markdown("""
-            ## 🐦 Twitter/X Strategy
+            ##  Twitter/X Strategy
             
             ### Real-Time Engagement Platform
             
@@ -658,7 +658,7 @@ elif page == "Platform Strategy":
             """, unsafe_allow_html=True)
 
 elif page == "Content Calendar":
-    st.title("📆 January 2026 Content Calendar")
+    st.title(" January 2026 Content Calendar")
     
     # Create calendar data
     calendar_data = {
@@ -705,7 +705,7 @@ elif page == "Content Calendar":
     st.divider()
     
     # Visual timeline
-    st.markdown("### 📊 Content Distribution by Platform")
+    st.markdown("### Content Distribution by Platform")
     
     platform_counts = df['Platform'].value_counts()
     
@@ -725,11 +725,11 @@ elif page == "Content Calendar":
     st.plotly_chart(fig, use_container_width=True)
 
 elif page == "KPIs & Goals":
-    st.title("🎯 KPIs & Strategic Goals")
+    st.title(" KPIs & Strategic Goals")
     
     st.markdown("""
     <div class="highlight">
-    <h3>⚠️ Month 1 Philosophy: Foundation Over Growth</h3>
+    <h3> Month 1 Philosophy: Foundation Over Growth</h3>
     <p>January focuses on building sustainable systems, learning the brand voice, and understanding 
     what resonates with the audience. Significant growth typically happens in months 2-4.</p>
     </div>
@@ -755,7 +755,7 @@ elif page == "KPIs & Goals":
         """)
     
     with col2:
-        st.markdown("### ✅ Strategic Objectives")
+        st.markdown("###  Strategic Objectives")
         
         st.markdown("""
         **Infrastructure:**
@@ -777,7 +777,7 @@ elif page == "KPIs & Goals":
     st.divider()
     
     # Metrics to track
-    st.markdown("### 📊 Key Performance Indicators")
+    st.markdown("###  Key Performance Indicators")
     
     metrics_col1, metrics_col2, metrics_col3 = st.columns(3)
     
@@ -814,7 +814,7 @@ elif page == "KPIs & Goals":
     st.divider()
     
     # 90-day vision
-    st.markdown("### 🚀 90-Day Growth Vision")
+    st.markdown("###  90-Day Growth Vision")
     
     months_data = {
         'Month': ['January', 'February', 'March'],
@@ -832,7 +832,7 @@ elif page == "KPIs & Goals":
     
     st.markdown("""
     <div class="highlight">
-    <h4>💡 Strategic Approach</h4>
+    <h4> Strategic Approach</h4>
     <p>This strategy prioritizes building a strong foundation in January—consistent 
     quality content, understanding audience preferences, and establishing robust systems. 
     Growth will be gradual and sustainable, with each month building on learnings from 
