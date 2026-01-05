@@ -155,7 +155,7 @@ if page == "Overview":
         st.markdown("""
             <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07); border-left: 4px solid #6B46C1; min-height: 140px;">
                 <p style="font-size: 14px; font-weight: 500; color: #64748b; margin-bottom: 10px;">Target Posts</p>
-                <p style="font-size: 36px; font-weight: 700; color: #1e293b; margin: 0;">12-15</p>
+                <p style="font-size: 36px; font-weight: 700; color: #1e293b; margin: 0;">15-20</p>
                 <p style="font-size: 13px; color: #10b981; margin-top: 8px;">↑ Monthly</p>
             </div>
         """, unsafe_allow_html=True)
