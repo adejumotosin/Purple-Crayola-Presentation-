@@ -334,22 +334,40 @@ elif page == "Weekly Breakdown":
             
             ---
             
+            ### Introducing Presence - Instagram Version (Jan 8)
+            
+            **Content:** "Your expertise is undeniable 🎯 But is your visibility matching your impact? 
+            Introducing Presence by Purple Crayolá — personal branding for leaders ready to own their story. 
+            Built on our signature PRISM Framework™ ✨"
+            
+            **Format:** Eye-catching carousel with bold visuals (5-7 slides)
+            **Slides:** Problem → Presence Introduction → PRISM Overview → Who It's For → Results
+            **Style:** Instagram-native, visual-first, punchy copy
+            **CTA:** "Link in bio to learn more"
+            
+            ---
+            
             ### Feed Post (Jan 9)
             
             **Content:** "3 Signs You Need a Personal Brand Strategy in 2026"  
             **Format:** Carousel post with clean graphics, one sign per slide  
-            **Include:** 1) Your work speaks louder than your name 2) Opportunities aren't finding you 3) Your LinkedIn feels generic
-            **CTA:** "Ready to build your Presence? Link in bio"
+            **Slides:** 
+            1. Your work speaks louder than your name
+            2. Opportunities aren't finding you
+            3. Your LinkedIn feels generic
+            **Final Slide:** "Ready to build your Presence? Link in bio 🔗"
+            **Design:** Bold typography, brand colors, professional yet approachable
             """)
         
         with tab3:
             st.markdown("""
             ### Daily Engagement
             
-            - Thread: "Personal branding isn't vanity. It's visibility with purpose. Here's why it matters in 2026..."
+            - Thread: "Personal branding isn't vanity. It's visibility with purpose. Here's why it matters in 2026..." (7-10 tweet thread)
             - Quote tweet success stories about professional visibility
             - Retweet industry conversations about thought leadership
-            - Engagement: "What's one word you want to be known for professionally?"
+            - Engagement question: "What's one word you want to be known for professionally?"
+            - Share quick Presence tip: "Your bio is your billboard. Make every word count."
             """)
     
     elif "Week 2" in week:
@@ -380,33 +398,50 @@ elif page == "Weekly Breakdown":
         
         with tab2:
             st.markdown("""
-            ### Presence Testimonial Highlight (Jan 14)
+            ### PRISM Framework™ - Instagram Version (Jan 14)
             
-            **Content:** Client transformation story featuring before/after screenshots  
-            **Slides:** Problem → PRISM Process → Results → Client quote  
-            **Design:** Professional, inspiring visuals
-            **CTA:** "Your story deserves to be told. Let's build your Presence."
+            **Content:** "What if your personal brand could be as clear as light through a prism? 💎 
+            Meet the PRISM Framework™ — Position. Refine. Ignite. Signal. Multiply. 
+            The system that transforms your expertise into influence."
+            
+            **Format:** High-impact carousel (7-10 slides)
+            **Slides:** 
+            - Cover: "Introducing the PRISM Framework™"
+            - P: Position (foundation & clarity)
+            - R: Refine (identity & visuals)
+            - I: Ignite (launch strategy)
+            - S: Signal (visibility systems)
+            - M: Multiply (scale & impact)
+            - Results: "Your brand, amplified"
+            - CTA: "DM 'PRESENCE' to start"
+            **Design:** Bold colors, geometric prism visuals, modern typography
             
             ---
             
-            ### Educational Carousel (Jan 16)
+            ### Case Study Story Highlight (Jan 15-16)
             
-            **Content:** "5 Mistakes Keeping You Invisible Online (And How to Fix Them)"
-            - Generic bios
-            - Inconsistent messaging
-            - No content strategy
-            - Passive presence
-            - Underestimating personal brand ROI
+            **Day 1 (Jan 15) - The Problem:**
+            - Story series: "Meet Sarah, a fintech ops leader..."
+            - "Excellent at her job. Invisible online."
+            - "She had the expertise. But not the visibility."
+            
+            **Day 2 (Jan 16) - The Transformation:**
+            - "Then she discovered Presence."
+            - Carousel showing: Before/After profile | PRISM process | New visibility
+            - Client quote graphic (testimonial)
+            - Final slide: "From invisible to influential. That's the power of Presence."
+            **CTA:** "Ready for your transformation? Link in bio"
             """)
         
         with tab3:
             st.markdown("""
             ### Weekly Engagement
             
-            - Thread: "Your personal brand is not about you. It's about the doors you want to open and the problems you solve."
-            - Poll: "What's holding you back from building your personal brand?"
-            - Retweet inspiring thought leadership content
-            - #PresenceTuesday: Share quick personal branding tips
+            - #PresenceTuesday thread: "The 5 elements of the PRISM Framework™ and how each one transforms your brand..."
+            - Poll: "What's holding you back from building your personal brand?" (Options: Time, Clarity, Confidence, Don't know where to start)
+            - Retweet and comment on inspiring thought leadership content
+            - Share client win: "This is what happens when you align expertise with visibility"
+            - Engagement: "Drop a 💎 if you're ready to build your Presence in 2026"
             """)
     
     elif "Week 3" in week:
@@ -436,21 +471,40 @@ elif page == "Weekly Breakdown":
         
         with tab2:
             st.markdown("""
-            ### "Day in the Life" Stories (Jan 20-21)
+            ### Team + Presence BTS Stories (Jan 20-21)
             
+            **Story Series:**
+            - "Meet the team behind Presence 👋"
             - Follow a Presence strategist through a client session
-            - Show the PRISM Framework™ in action
+            - Show the PRISM Framework™ in action (whiteboard, planning)
             - Behind-the-scenes content creation process
-            - Interactive: "What would your personal brand tagline be?"
+            - Team member spotlight with quick Q&A stickers
+            - Interactive: "What would your personal brand tagline be?" (Question sticker)
             
             ---
             
-            ### Culture + Values Post (Jan 23)
+            ### Who Presence Is For - Instagram Version (Jan 22-23)
             
-            **Content:** "At Purple Crayolá, we believe your brand should be as unique as your journey. 
-            'You'nique collaboration. Cultural fluency. Data-informed impact. This is how we build Presence."  
-            **Format:** Values-driven carousel with team photos  
-            **Style:** Authentic, inspiring
+            **Jan 22 Post:**
+            **Content:** "Presence isn't for everyone. It's for the builders, the believers, the timid but audacious 🚀"
+            
+            **Format:** Carousel (7-8 slides)
+            **Slides:**
+            - Cover: "Is Presence for you?"
+            - Slide 1: Executives seeking platform authority
+            - Slide 2: Creatives ready to scale their message
+            - Slide 3: Professionals navigating career pivots
+            - Slide 4: Diaspora talents anchoring their voice
+            - Slide 5: Mission-driven leaders integrating values
+            - Slide 6: "If you said yes to any of these..."
+            - Final: "Presence is for you. Link in bio 🔗"
+            **Design:** People-focused imagery, inclusive representation
+            
+            **Jan 23 - Values Post:**
+            **Content:** "'You'nique collaboration. Cultural fluency. Data-informed impact. 
+            At Purple Crayolá, your brand is as unique as your journey 💜"
+            **Format:** Photo carousel of team collaboration moments
+            **Style:** Warm, authentic, inspiring
             """)
         
         with tab3:
@@ -458,9 +512,10 @@ elif page == "Weekly Breakdown":
             ### Weekly Content
             
             - #MotivationMonday: "Your visibility is not vanity. It's stewardship of your gifts."
-            - Wednesday wisdom: Thread on personal branding myths
-            - Engage with diaspora professionals and thought leaders
-            - Share and comment on client wins
+            - Wednesday thread: "3 personal branding myths that keep talented people invisible"
+            - Engage with and amplify diaspora professionals and thought leaders
+            - Share and celebrate client wins with commentary
+            - Quote tweet: Thought-provoking content about leadership and visibility
             """)
     
     else:  # Week 4
@@ -490,31 +545,60 @@ elif page == "Weekly Breakdown":
         
         with tab2:
             st.markdown("""
-            ### Success Story Highlight (Jan 28)
+            ### Presence Packages - Instagram Version (Jan 27-28)
             
-            **Content:** "From underrepresented to unmissable. See how Presence helped a healthcare CEO build 
-            a values-aligned platform and scale her leadership voice across continents."  
-            **Purpose:** Social proof with emotional impact  
-            **Format:** Before/after carousel with testimonial
+            **Jan 27 Post:**
+            **Content:** "From clarity to scale 📈 Find your perfect pathway to building a personal brand that moves people."
+            
+            **Format:** Swipeable carousel (6 slides)
+            **Slides:**
+            - Cover: "Choose Your Presence Pathway"
+            - Presence Core: "Start with clarity"
+            - Presence Pro: "Align and activate"
+            - Presence Elite: "Scale with influence"
+            - Presence Launchpad: "Consistent content"
+            - CTA: "Book your discovery call. Link in bio 🔗"
+            **Design:** Clean, comparison format, package icons
+            
+            **Jan 28 - Success Story:**
+            **Content:** "From underrepresented to unmissable 🌟 
+            How Presence helped a healthcare CEO build a values-aligned platform 
+            and scale her leadership voice across continents."
+            
+            **Format:** Story-driven carousel (5-7 slides)
+            **Slides:** Challenge → Journey → PRISM in action → Results → Testimonial quote → CTA
+            **Style:** Emotional, inspiring, authentic photos/graphics
             
             ---
             
-            ### Call-to-Action Campaign (Jan 30)
+            ### Month-End Content (Jan 29-30)
             
-            **Content:** "Your work speaks louder than your visibility. It's time to align the two. 
-            Presence is your platform. Your signal. Your story—told with excellence. Let's build it together."  
-            **Format:** High-quality branded visual  
-            **CTA:** "Start your Presence journey. DM us or book at purplecrayola.com/presence"
+            **Jan 29 Stories:**
+            - "January was about laying the foundation 🏗️"
+            - Swipe-through recap of top posts
+            - Poll: "What was your favorite content this month?"
+            - "February preview: We're going deeper 👀"
+            
+            **Jan 30 Post:**
+            **Content:** "Your work speaks louder than your visibility. 
+            It's time to align the two 🎯 Presence is your platform. Your signal. 
+            Your story—told with excellence. Let's build it together."
+            
+            **Format:** High-impact branded visual with strong CTA
+            **Design:** Bold, eye-catching, professional
+            **CTA:** "Start your Presence journey. DM us or link in bio to book 💜"
             """)
         
         with tab3:
             st.markdown("""
             ### Weekly Engagement
             
-            - Thread: "The 5 stages of personal brand evolution—and where you are right now"
-            - Final week engagement: "What's your biggest takeaway from January?"
-            - Share thought-provoking content about visibility and leadership
-            - Preview February content themes
+            - Thread: "The 5 stages of personal brand evolution—and where you are right now" (Educational, actionable)
+            - Share Presence packages breakdown as visual thread
+            - Final week engagement: "What's your biggest takeaway from January? Drop it below 👇"
+            - Share thought-provoking content about visibility and authentic leadership
+            - Preview February: "Next month we're talking thought leadership frameworks, content strategies, and the art of showing up with intention"
+            - Engagement tweet: "Fill in the blank: In 2026, I want to be known for _____"
             """)
     
     st.divider()
