@@ -1859,7 +1859,7 @@ elif page == "📥 Export & Resources":
     
     asset_summary = pd.DataFrame({
         'Asset Type': ['Graphics (Quote/Single)', 'Carousels', 'Videos', 'Twitter Threads'],
-        'Quantity': [5, 8, 3, 15+],
+        'Quantity': [5, 8, 3, '15+'],
         'Responsibility': ['Designer', 'Designer', 'Video Editor', 'Content Manager'],
         'Average Time': ['2-3 hours', '4-6 hours', '8-12 hours', '1-2 hours']
     })
